@@ -1,0 +1,267 @@
+.video{
+		//穿透/deep/
+		.van-tabs__wrap{
+			border-bottom: 1px solid gray;
+			
+		}
+		.video-cancle{
+			display: flex;
+			justify-content: space-between;
+			margin: 10px;
+		}
+		.video-box{
+			width: 100%;
+			height: 265px;
+			display: flex;
+			justify-content: center;
+			video{
+				width: 100% !important;
+				height: 100% !important;
+			}
+			/deep/ .video-arrow-left{
+				margin-right: -30px !important;
+				color:gainsboro !important;
+				display: flex;
+			}
+
+
+		}
+		
+		.content{
+			margin: 20px;
+			.title{
+				font-size: 20px;
+				font-weight: 600;
+			}
+			.tag-type-time-view{
+				display: flex;
+				margin: 10px 0;
+				font-size: 14px;
+				align-items:  baseline;
+				color: #a8a8a8;
+				div{
+					margin-right: 10px;
+				}
+			}
+			.desc{
+				font-size: 14px;
+				color: #616161;
+			}
+			.good-collect-share{
+				display: flex;
+				justify-content: space-between;
+				margin: 15psx 10%;
+				span{
+					display: block;
+				}
+			}
+			.all-tags{
+				
+				border-top: 1px solid #80808024;
+				border-bottom: 1px solid #80808024;
+				display: flex;
+				align-items: center;
+				flex-wrap: wrap;
+				span{
+					background: #f7f7f7;
+					height: 25px;
+					width: 80px;
+					text-align: center;
+					line-height: 25px;
+					color: darkgray;
+					margin:2% 2%;
+					border-radius: 5px;
+				}
+			}
+			.composer-value{
+				font-size: 18px;
+				font-weight: 600;
+				text-align: left;
+				margin-top: 20px;
+				
+			}
+			.composer-item{
+				height: 70px;
+				width: 200px;
+				background: white;
+				margin-top: 15px;
+				border-radius: 10px;
+				box-shadow: 0px 0px 6px -1px gray;
+				float: left;
+			
+			}
+			.img-info{
+				display: flex;
+				// justify-content: space-between;
+				align-items: center;
+				
+				img{
+						width: 40px;
+						height: 40px;
+						border-radius: 40px;
+						margin: 10% 2%;
+					}
+				
+			}
+			.info{
+				margin: 3% 0;
+				font-size: 15px;
+			}
+			
+			.btn{
+				background: #e74b3c;
+				width: 50px;
+				height: 20px;
+				color: white;
+				border-radius: 10px;
+				margin-left: 15%;
+				// line-height: 30px;
+			}
+			
+			
+		}
+		.sameVideo{
+			margin: 110px 20px;
+			
+			.title-same{
+				border-bottom: 1px solid #80808024;
+				text-align: left;
+				font-size: 18px;
+				font-weight: 600;
+				margin-bottom: 20px;
+			}
+			.item-left{
+				margin-right: 10px;
+			}
+			.list-item{
+				height: 100px;
+				margin-bottom: 15px;
+				display: flex;
+				align-items: center;
+			}
+			.item-left{
+				position: relative;
+				img{
+					width: auto;
+					height: 100px;
+				}
+				span{
+					position: absolute;
+					right: 0;
+					bottom: 0;
+					color: white;
+				}
+			}
+			.item-right{
+				.item-title{
+					font-size: 16px;
+					font-weight: 600;
+					-webkit-line-clamp: 2;
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+				.view-like{
+					margin: 8px 0;
+					color: #a8a8a8;
+					
+				}
+				.author-box{
+					display: flex;
+					align-items: center;
+					.picture{
+						width: 30px;
+						height: 30px;
+						border-radius: 50%;
+					}
+					span{
+						color: #a8a8a8;
+						margin-left: 10px;
+					}
+				}
+			}
+			
+			
+		}
+		//评论
+		     .count{
+				 position: absolute;
+				 color: red;
+				 padding-left: 5px;
+			 }
+			.comment-item{
+				padding: 20px;
+				margin-bottom: 2%;
+				
+				.comment-top{
+					display: flex;
+					position: relative;
+				}
+				.comment-header{
+
+					margin-right: 10px;
+					
+				}
+				.comment-pictrue{
+					width: 35px;
+					height: 35px;
+					border-radius: 35px;
+					margin-right: 10px;
+				}
+				.username{
+					padding-left: 0;
+					color: #969696;
+					width: 100%;
+					text-align: left;
+				}
+				.doint{
+					position: absolute;
+					right: 0;
+					top: 0;
+					transform: rotateZ(90deg);
+				}
+				.van-tab__text--ellipsis{
+								 position: relative;
+								 overflow: initial;
+				}
+				.comment-value{
+					font-size: 16px;
+					font-weight: 600;
+					text-align: left;
+					-webkit-line-clamp: 2;
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+				.comment-bottom{
+					width: 100%;
+					margin-top: 10px;
+					margin-left: 40px;
+					display: flex;
+					
+					border-bottom: 1px solid darkgray;
+					
+				}
+				.item-address{
+					color: #8e8e8e;
+					font-size: 14px;
+					justify-content: space-between;
+					span{
+						margin-right: 10px;
+					}
+				}
+				.other-comment-good{
+					width: 80px;
+					display: flex;
+					align-items: center;
+					
+				}
+				
+			
+				
+			}
+		
+
+	}
